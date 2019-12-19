@@ -74,4 +74,20 @@ html {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
+
+.glow {
+  background-color: #262626;
+  color: yellow;
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 63px;
+  border-radius: 50%;
+  font-size: 30px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  margin: 100px;
+}
 /*# sourceMappingURL=style.css.map */
