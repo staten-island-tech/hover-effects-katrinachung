@@ -3,7 +3,7 @@ html {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: #b1bfca;
+    background-color: #cfdee9;
 }
 
 .holiday-parent{
@@ -50,17 +50,19 @@ html {
 }
 
 .button {
-    background-color: rgb(23, 23, 146);
+    background-color: #b1bfca;
     border: none;
     color: white;
     padding: 15px 32px;
     text-align: center;
     display: inline;
     font-size: 16px;
+    border-radius: 10px;
+    box-shadow: -6px 0 #81a5c0;
 }
 
 .button:hover {
+    position: relative;
     transform: scale(1.3);
-    outline: 1rem solid rgb(120, 120, 148);
     z-index: 2;
 }
