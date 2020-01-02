@@ -49,6 +49,29 @@ html {
     opacity: 0.5;
 }
 
+.glow {
+    background-color: #262626;
+    position: absolute;
+    display: block;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    line-height: 63px;
+    border-radius: 50%;
+    font-size: 30px;
+    transition: .5s;
+    margin: 100px;
+    justify-content: center;
+}
+
+ .glow:hover {
+     position: absolute;
+     transform: none;
+     color: rgba(255, 255, 255, 1);
+     box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+     z-index: 1;
+ }
+
 .button {
     background-color: #b1bfca;
     border: none;
@@ -66,19 +89,4 @@ html {
     transform: none;
     z-index: -1;
     transition: all 0.3s;
-}
-
-.glow {
-    background-color: #262626;
-    color: yellow;
-    position: absolute;
-    display: block;
-    width: 60px;
-    height: 60px;
-    text-align: center;
-    line-height: 63px;
-    border-radius: 50%;
-    font-size: 30px;
-    transition: .5s;
-    margin: 100px;
 }
