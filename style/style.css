@@ -53,6 +53,34 @@ html {
   opacity: 0.5;
 }
 
+.glow {
+  background-color: #262626;
+  position: absolute;
+  display: block;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  line-height: 63px;
+  border-radius: 50%;
+  font-size: 30px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  margin: 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.glow:hover {
+  position: absolute;
+  -webkit-transform: none;
+          transform: none;
+  color: white;
+  -webkit-box-shadow: 0 5px 15px rgba(145, 92, 182, 0.4);
+          box-shadow: 0 5px 15px rgba(145, 92, 182, 0.4);
+  z-index: 1;
+}
+
 .button {
   background-color: #b1bfca;
   border: none;
@@ -73,21 +101,5 @@ html {
   z-index: -1;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-}
-
-.glow {
-  background-color: #262626;
-  color: yellow;
-  position: absolute;
-  display: block;
-  width: 60px;
-  height: 60px;
-  text-align: center;
-  line-height: 63px;
-  border-radius: 50%;
-  font-size: 30px;
-  -webkit-transition: .5s;
-  transition: .5s;
-  margin: 100px;
 }
 /*# sourceMappingURL=style.css.map */
