@@ -95,7 +95,7 @@ html {
   margin: 120px auto;
   width: 50px;
   height: 50px;
-  background: white;
+  background: black;
   border-radius: 30%;
   font-family: 'Times New Roman', Times, serif;
   font-size: 20px;
@@ -103,6 +103,7 @@ html {
   transition: 1s -webkit-box-shadow;
   transition: 1s box-shadow;
   transition: 1s box-shadow, 1s -webkit-box-shadow;
+  color: #f0d4af;
 }
 
 .rainbow:hover {
@@ -116,7 +117,7 @@ html {
   position: absolute;
   width: 50px;
   height: 50px;
-  background: #FDA8CF;
+  background: #a8fdda;
   border-radius: 30%;
   z-index: -1;
   -webkit-animation: 1s clockwise infinite;
@@ -124,7 +125,7 @@ html {
 }
 
 .rainbow:hover:after {
-  background: #F3CE5E;
+  background: #f3885e;
   -webkit-animation: 2s counterclockwise;
           animation: 2s counterclockwise;
 }
@@ -305,5 +306,27 @@ html {
   z-index: -1;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+.container {
+  height: 5vh;
+  width: 10vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  padding: 10px 10px;
+  background: blanchedalmond;
+  font-size: 20px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 /*# sourceMappingURL=style.css.map */
