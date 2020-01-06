@@ -81,11 +81,12 @@ html {
     margin: 120px auto;
     width: 50px;
     height: 50px;
-    background: white;
+    background: black;
     border-radius: 30%;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     transition: 1s box-shadow;
+    color: rgb(240, 212, 175);
 }
 
 .rainbow:hover {
@@ -98,14 +99,14 @@ html {
     position: absolute;
     width: 50px;
     height: 50px;
-    background: #FDA8CF;
+    background: rgb(168, 253, 218);
     border-radius: 30%;
     z-index: -1;
     animation: 1s clockwise infinite;
 }
 
 .rainbow:hover:after {
-    background: #F3CE5E;
+    background: rgb(243, 136, 94);
     animation: 2s counterclockwise;
 }
  @keyframes clockwise{
@@ -203,4 +204,32 @@ html {
     transform: none;
     z-index: -1;
     transition: all 0.3s;
+}
+
+.container {
+    height: 5vh;
+    width: 10vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 10px;
+    background: blanchedalmond;
+    font-size: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: all 1s;
+}
+
+.container:hover:before, .container:hover:after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border: 0px solid #fff;
+    transition: all 1s;
+}
+
+.container:hover:after {
+    top
 }
