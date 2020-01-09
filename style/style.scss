@@ -206,7 +206,7 @@ html {
     transition: all 0.3s;
 }
 
-.follow {
+.shift {
     display: grid;
     grid-template-columns: repeat(9, 40px);
     grid-template-rows: repeat(7, 40px);
@@ -217,41 +217,19 @@ html {
     background-color: rgb(42, 42, 102);
 }
 
-.follow:hover {
+.shift:hover {
     transform: rotate(2deg);
 }
 
-.list {
-    font-family: sans-serif;
-    text-transform: lowercase;
-    margin: 20px 0;
-    padding: 10px 20px;
-    color: blue;
-    font-size: 18px;
-    font-weight: 500;
-    transition: .5s;
+.grow {
+    background-color: rgb(96, 187, 96);
+    border-radius: 10px;
+    border-color: rgb(47, 119, 47);
+    height: 30px;
+    width: 30px;
+    margin: 20px
 }
-.list:hover {
-    color: #fff;
-    opacity: 1;
-}
-.list.rainbow:hover:before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    border-top: 2px solid #262626;
-    border-bottom: 2px solid #262626;
-    transform: scaleY(2);
-    opacity: 0;
-    transition: .3s;
-}
-.list:hover:after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    background-color: #262626;
-    transform: scale(0);
-    opacity: 0;
-    transition: .3s;
-    z-index: -1;
+.grow:hover {
+    transform: scale(0.3);
+    transition: 0.2s;
 }
