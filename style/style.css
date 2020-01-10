@@ -7,6 +7,19 @@ html {
   background-color: #cfdee9;
 }
 
+.flex-parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .holiday-parent {
   width: 65rem;
   height: 45rem;
@@ -65,10 +78,6 @@ html {
   font-size: 30px;
   -webkit-transition: .5s;
   transition: .5s;
-  margin: 100px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .glow:hover {
@@ -81,216 +90,12 @@ html {
   z-index: 1;
 }
 
-.rainbow {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: relative;
-  margin: 120px auto;
-  width: 50px;
-  height: 50px;
-  background: black;
-  border-radius: 30%;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 20px;
-  -webkit-transition: 1s -webkit-box-shadow;
-  transition: 1s -webkit-box-shadow;
-  transition: 1s box-shadow;
-  transition: 1s box-shadow, 1s -webkit-box-shadow;
-  color: #f0d4af;
-}
-
-.rainbow:hover {
-  -webkit-box-shadow: 0 5px 35px 0px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 5px 35px 0px rgba(0, 0, 0, 0.1);
-}
-
-.rainbow:hover:before, .rainbow:hover:after {
-  display: block;
-  content: '';
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  background: #a8fdda;
-  border-radius: 30%;
-  z-index: -1;
-  -webkit-animation: 1s clockwise infinite;
-          animation: 1s clockwise infinite;
-}
-
-.rainbow:hover:after {
-  background: #f3885e;
-  -webkit-animation: 2s counterclockwise;
-          animation: 2s counterclockwise;
-}
-
-@-webkit-keyframes clockwise {
-  0% {
-    top: -5px;
-    left: 0;
-  }
-  12% {
-    top: -2px;
-    left: 2px;
-  }
-  25% {
-    top: 0;
-    left: 5px;
-  }
-  37% {
-    top: 2px;
-    left: 2px;
-  }
-  50% {
-    top: 5px;
-    left: 0;
-  }
-  62% {
-    top: 2px;
-    left: -2px;
-  }
-  75% {
-    top: 0;
-    left: -5px;
-  }
-  87% {
-    top: -2px;
-    left: -2px;
-  }
-  100% {
-    top: -5px;
-    left: 0;
-  }
-}
-
-@keyframes clockwise {
-  0% {
-    top: -5px;
-    left: 0;
-  }
-  12% {
-    top: -2px;
-    left: 2px;
-  }
-  25% {
-    top: 0;
-    left: 5px;
-  }
-  37% {
-    top: 2px;
-    left: 2px;
-  }
-  50% {
-    top: 5px;
-    left: 0;
-  }
-  62% {
-    top: 2px;
-    left: -2px;
-  }
-  75% {
-    top: 0;
-    left: -5px;
-  }
-  87% {
-    top: -2px;
-    left: -2px;
-  }
-  100% {
-    top: -5px;
-    left: 0;
-  }
-}
-
-@-webkit-keyframes counterclockwise {
-  0% {
-    top: -5px;
-    left: 0;
-  }
-  12% {
-    top: -2px;
-    left: 2px;
-  }
-  25% {
-    top: 0;
-    left: 5px;
-  }
-  37% {
-    top: 2px;
-    left: 2px;
-  }
-  50% {
-    top: 5px;
-    left: 0;
-  }
-  62% {
-    top: 2px;
-    left: -2px;
-  }
-  75% {
-    top: 0;
-    left: -5px;
-  }
-  87% {
-    top: -2px;
-    left: -2px;
-  }
-  100% {
-    top: -5px;
-    left: 0;
-  }
-}
-
-@keyframes counterclockwise {
-  0% {
-    top: -5px;
-    left: 0;
-  }
-  12% {
-    top: -2px;
-    left: 2px;
-  }
-  25% {
-    top: 0;
-    left: 5px;
-  }
-  37% {
-    top: 2px;
-    left: 2px;
-  }
-  50% {
-    top: 5px;
-    left: 0;
-  }
-  62% {
-    top: 2px;
-    left: -2px;
-  }
-  75% {
-    top: 0;
-    left: -5px;
-  }
-  87% {
-    top: -2px;
-    left: -2px;
-  }
-  100% {
-    top: -5px;
-    left: 0;
-  }
-}
-
 .button {
   background-color: #b1bfca;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 15px 30px;
+  width: 10vh;
   text-align: center;
   display: inline;
   font-size: 16px;
@@ -300,12 +105,11 @@ html {
 }
 
 .button:hover {
-  position: absolute;
-  -webkit-transform: none;
-          transform: none;
   z-index: -1;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  -webkit-transform: skewY(-15px);
+          transform: skewY(-15px);
 }
 
 .shift {
@@ -315,7 +119,8 @@ html {
       grid-template-columns: repeat(9, 40px);
   -ms-grid-rows: (40px)[7];
       grid-template-rows: repeat(7, 40px);
-  grid-gap: 1.5rem;
+  grid-gap: 10px;
+  height: 10vh;
 }
 
 .item {
@@ -327,7 +132,7 @@ html {
           transform: rotate(2deg);
 }
 
-.grow {
+.shrink {
   background-color: #60bb60;
   border-radius: 10px;
   border-color: #2f772f;
@@ -336,7 +141,7 @@ html {
   margin: 20px;
 }
 
-.grow:hover {
+.shrink:hover {
   -webkit-transform: scale(0.3);
           transform: scale(0.3);
   -webkit-transition: 0.2s;
