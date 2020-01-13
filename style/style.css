@@ -106,10 +106,10 @@ html {
 
 .button:hover {
   z-index: -1;
-  -webkit-transition: all .5s;
-  transition: all .5s;
-  -webkit-transform: skewY(-15px);
-          transform: skewY(-15px);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  -webkit-transform: translate(10%);
+          transform: translate(10%);
 }
 
 .shift {
